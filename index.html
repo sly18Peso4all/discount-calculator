@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <title>Discount Calculator</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Discount Calculator</h1>
+    </header>
+    <main>
+      <section>
+        <!-- Price Display-->
+        <form id="discount-form" class="form">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text">Product Amount (€):</span>
+              <input
+                type="number"
+                class="form-control"
+                id="price"
+                placeholder="price"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text">Product Discount (%):</span>
+              <input
+                type="number"
+                class="form-control"
+                id="discount"
+                placeholder="discount"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <input type="submit" value="Calculate" class="button" />
+            </div>
+          </div>
+        </form>
+
+        <!-- Loader Display-->
+        <div id="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Result Display-->
+        <div id="results-display">
+          <div class="row-table">
+            <div class="row-group">
+              <p class="row-header">Cost Price (€)</p>
+              <p class="row-text show-price"></p>
+            </div>
+            <div class="row-group">
+              <p class="row-header">Discount (%)</p>
+              <p class="row-text show-discount"></p>
+            </div>
+            <div class="row-group">
+              <p class="row-header">Total Cost (€)</p>
+              <p class="row-text show-total-cost"></p>
+            </div>
+            <div class="row-group">
+              <p class="row-header">Saved Cost (€)</p>
+              <p class="row-text show-saved-cost"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
